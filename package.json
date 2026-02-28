@@ -1,0 +1,17 @@
+{
+    "name": "pfr-availability-checker",
+    "version": "1.0.0",
+    "description": "Brazilian Room availability checker – East Bay Regional Park District",
+    "main": "check_availability.ts",
+    "scripts": {
+        "check": "bun run check_availability.ts",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "playwright": "latest"
+    },
+    "devDependencies": {
+        "bun-types": "latest",
+        "prettier": "^3.8.1"
+    }
+}

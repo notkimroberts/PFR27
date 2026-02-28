@@ -173,6 +173,10 @@ async function main(): Promise<void> {
         sendNotification(`${RESOURCE_NAME} AVAILABLE!`, `Open on: ${summary}`)
         await sendNtfy(`${RESOURCE_NAME} AVAILABLE!`, `Open on: ${summary}`)
     } else {
+        await sendNtfy(
+            `${RESOURCE_NAME} NOT AVAILABLE!`,
+            `No availability found for any target Saturday.`,
+        )
         logger.info('No availability found for any target Saturday.')
     }
 
